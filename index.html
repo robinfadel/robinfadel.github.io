@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>robinfadel — Portfolio</title>
+  <style>
+    :root { --accent:#0b76ef; --bg:#f7f9fc; --card:#fff; --muted:#6b7280; --text:#0b1220; }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:var(--text); }
+    .container{max-width:920px;margin:36px auto;padding:20px;}
+    .header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:#ddd;flex:0 0 96px;overflow:hidden;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    h1{margin:0 0 6px 0;font-size:1.4rem}
+    p.lead{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 300px;gap:18px;margin-top:18px}
+    .project{border-left:4px solid var(--accent);padding:12px;background:#fbfdff;border-radius:8px}
+    a.button{display:inline-block;padding:8px 12px;background:var(--accent);color:white;border-radius:8px;text-decoration:none}
+    a.link{color:var(--accent);text-decoration:none}
+    footer{margin-top:20px;color:var(--muted);font-size:0.9rem}
+    @media (max-width:820px){ .grid{grid-template-columns:1fr} .header{flex-direction:row} .avatar{width:80px;height:80px} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card header">
+      <div class="avatar">
+        <img src="https://avatars.githubusercontent.com/robinfadel" alt="avatar" style="width:100%;height:100%;object-fit:cover" />
+      </div>
+      <div>
+        <h1>robinfadel <small style="color:var(--muted);font-weight:600">@robinfadel</small></h1>
+        <p class="lead">Software developer — building web apps, APIs, and contributing to open-source.</p>
+        <p style="margin-top:10px">
+          <a class="button" href="https://github.com/robinfadel" target="_blank" rel="noopener">View GitHub</a>
+          <a class="button" href="mailto:youremail@example.com" style="background:#111;margin-left:8px">Email</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <main>
+        <div class="card">
+          <h3>Featured Projects</h3>
+
+          <div class="project" style="margin-top:10px">
+            <h4><a class="link" href="https://github.com/robinfadel/project-one" target="_blank" rel="noopener">project-one</a></h4>
+            <p style="margin:6px 0;color:var(--muted)">Project one — ছোট বর্ণনা (Tech: React, Node.js)</p>
+          </div>
+
+          <div class="project" style="margin-top:10px">
+            <h4><a class="link" href="https://github.com/robinfadel/project-two" target="_blank" rel="noopener">project-two</a></h4>
+            <p style="margin:6px 0;color:var(--muted)">Project two — ছোট বর্ণনা (Tech: Python, FastAPI)</p>
+          </div>
+
+          <div class="project" style="margin-top:10px">
+            <h4><a class="link" href="https://github.com/robinfadel/project-three" target="_blank" rel="noopener">project-three</a></h4>
+            <p style="margin:6px 0;color:var(--muted)">Project three — ছোট বর্ণনা (Tech: Go, Docker)</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>About me</h3>
+          <p class="lead">Hi — I build full-stack applications and enjoy clean code, developer experience, and reliable APIs. I contribute to open-source and experiment with performance tuning.</p>
+        </div>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h4>Skills</h4>
+          <ul style="padding-left:18px;color:var(--muted);margin:8px 0 0 0">
+            <li>JavaScript / TypeScript</li>
+            <li>React, Next.js</li>
+            <li>Node.js, Express, FastAPI</li>
+            <li>Docker, PostgreSQL, CI/CD</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Contact</h4>
+          <p style="margin:6px 0"><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+          <p style="margin:6px 0"><a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a></p>
+          <p style="margin:6px 0"><a href="https://twitter.com/your-handle" target="_blank" rel="noopener">@your-handle</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built by <strong>robinfadel</strong> • Source on <a href="https://github.com/robinfadel/robinfadel.github.io" class="link" target="_blank" rel="noopener">GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
