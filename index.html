@@ -3,53 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin Fadel - Artist Portfolio</title>
+    <title>Artist Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Artistic Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p class="tagline">Artistry Meets Excellence</p>
+        <a href="#contact" class="cta-button">Contact Me</a>
     </header>
-
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a versatile artist specializing in various disciplines including painting, sculpture, and digital art. My work aims to inspire and provoke thought through the interplay of colors and forms.</p>
+        <p>Professional artist with years of experience.</p>
+        <div class="statistics">
+            <div><h3>10+</h3><p>Years of Experience</p></div>
+            <div><h3>50+</h3><p>Completed Projects</p></div>
+            <div><h3>100%</h3><p>Client Satisfaction</p></div>
+        </div>
     </section>
-
+    <section id="disciplines">
+        <h2>Artistic Disciplines</h2>
+        <div class="disciplines-grid">
+            <div>Painting</div>
+            <div>Sculpture</div>
+            <div>Photography</div>
+            <div>Digital Art</div>
+        </div>
+    </section>
     <section id="gallery">
         <h2>Gallery</h2>
         <div class="gallery-grid">
-            <img src="art1.jpg" alt="Artwork 1">
-            <img src="art2.jpg" alt="Artwork 2">
-            <img src="art3.jpg" alt="Artwork 3">
-            <img src="art4.jpg" alt="Artwork 4">
+            <!-- Images will be dynamically inserted -->
         </div>
     </section>
-
     <section id="testimonials">
-        <h2>Testimonials</h2>
-        <blockquote>
-            <p>"An exceptional artist with a unique vision!" - Art Critic</p>
-        </blockquote>
-        <blockquote>
-            <p>"Truly inspiring work that resonates with the audience." - Gallery Owner</p>
-        </blockquote>
+        <h2>Client Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>“Fantastic work!”</p>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="testimonial">
+                <p>“Exceeded my expectations!”</p>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+        </div>
     </section>
-
-    <footer>
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">Service 1</div>
+            <div class="service-card">Service 2</div>
+            <div class="service-card">Service 3</div>
+            <div class="service-card">Service 4</div>
+        </div>
+    </section>
+    <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: robin@example.com</p>
-        <p>Follow me on social media!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-methods">
+            <p>Email: artist@example.com</p>
+            <p>Phone: +123456789</p>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
     </footer>
-
     <script src="scripts.js"></script>
 </body>
 </html>
